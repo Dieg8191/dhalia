@@ -1,5 +1,10 @@
 from numbers import Number
 from AST.AST import *
+from AST.dataTypes import String, Number
+from AST.function import FnArgument, Function, FnCall
+from AST.logStatement import LogStatement
+from AST.operators import *
+from AST.variables import VarDeclaration, Variable
 
 
 class Parser:

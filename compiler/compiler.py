@@ -1,7 +1,10 @@
 import subprocess
 
-from AST.AST import Program, Function
+from AST.AST import Program
 import os
+
+from AST.function import Function
+
 
 class Compiler:
     def __init__(self, program: Program):
@@ -45,6 +48,7 @@ class Compiler:
     def compile_c(output_file: str, c_file: str):
         build_dir = "build"
         os.makedirs(build_dir, exist_ok=True)
+
         # Crear CMakeLists.txt
         cmake_file = os.path.join(build_dir, "CMakeLists.txt")
         with open(cmake_file, "w") as f:
@@ -54,6 +58,7 @@ class Compiler:
                 set(CMAKE_C_STANDARD 11)
                 add_executable({output_file} ../{c_file})
             """)
+
         # Generar proyecto
         subprocess.run(["cmake", "."], cwd=build_dir, check=True)
         # Compilar
