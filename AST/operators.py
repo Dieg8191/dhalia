@@ -9,7 +9,7 @@ class Addition(Expression): # TODO: Implement left and right hands for operation
         return f"Addition"
 
     def c_compile(self) -> str:
-        pass # TODO: Implement
+        raise NotImplementedError
 
 
 class Division(Expression): # TODO: Implement left and right hands for operations
@@ -20,7 +20,7 @@ class Division(Expression): # TODO: Implement left and right hands for operation
         return f"Division"
 
     def c_compile(self) -> str:
-        pass # TODO: Implement
+        raise NotImplementedError
 
 
 class Multiplication(Expression): # TODO: Implement left and right hands for operations
@@ -31,7 +31,7 @@ class Multiplication(Expression): # TODO: Implement left and right hands for ope
         return f"Multiplication"
 
     def c_compile(self) -> str:
-        pass # TODO: Implement
+        raise NotImplementedError
 
 
 class Subtraction(Expression): # TODO: Implement left and right hands for operations
@@ -42,4 +42,4 @@ class Subtraction(Expression): # TODO: Implement left and right hands for operat
         return f"Subtraction"
 
     def c_compile(self) -> str:
-        pass # TODO: Implement
+        raise NotImplementedError

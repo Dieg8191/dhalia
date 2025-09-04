@@ -47,4 +47,4 @@ class FnCall(Expression):
         return f"FnCall: {self.name}, Args: {self.args}"
 
     def c_compile(self) -> str:
-        pass # TODO: Implement
+        raise NotImplementedError

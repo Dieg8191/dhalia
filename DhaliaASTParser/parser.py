@@ -1,4 +1,3 @@
-from numbers import Number
 from AST.AST import *
 from AST.dataTypes import String, Number
 from AST.function import FnArgument, Function, FnCall

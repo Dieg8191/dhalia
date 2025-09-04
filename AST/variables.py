@@ -7,12 +7,18 @@ class VarDeclaration(Expression):
         self.type = var_type
         self.mutable = mutable
         self.value = value
+        self.c_var_eq = {
+            "int": "int",
+            "string" : "char*",
+            "float": "float",
+            "bool": "int"
+        }
 
     def __repr__(self):
         return f"VarDeclaration: name={self.name}, type={self.type}, mutable={self.mutable}, value={self.value}"
 
     def c_compile(self) -> str:
-        pass # TODO: Implement
+        return f"{self.c_var_eq[self.type]} {self.name} = {self.value.c_compile()}"
 
 
 class Variable(Expression):
@@ -24,4 +30,4 @@ class Variable(Expression):
         return f"Variable: {self.name}"
 
     def c_compile(self) -> str:
-        pass # TODO: Implement
+        return f"{self.name}"
