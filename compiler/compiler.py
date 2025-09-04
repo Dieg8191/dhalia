@@ -1,9 +1,7 @@
 import subprocess
-
-from AST.AST import Program
 import os
-
-from AST.function import Function
+from .AST.AST import Program
+from .AST.function import Function
 
 
 class Compiler:

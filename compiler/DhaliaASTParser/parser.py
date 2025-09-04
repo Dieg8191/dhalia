@@ -1,9 +1,9 @@
-from AST.AST import *
-from AST.dataTypes import String, Number
-from AST.function import FnArgument, Function, FnCall
-from AST.logStatement import LogStatement
-from AST.operators import *
-from AST.variables import VarDeclaration, Variable
+from compiler.AST.AST import *
+from compiler.AST.dataTypes import String, Number
+from compiler.AST.function import FnArgument, Function, FnCall
+from compiler.AST.logStatement import LogStatement
+from compiler.AST.operators import *
+from compiler.AST.variables import VarDeclaration, Variable
 
 
 class Parser:

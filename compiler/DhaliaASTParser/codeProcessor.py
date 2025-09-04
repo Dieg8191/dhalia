@@ -1,7 +1,7 @@
 import re
-from DhaliaASTParser.colors import Colors
-from AST.AST import Program
-from DhaliaASTParser.parser import Parser
+from compiler.DhaliaASTParser.colors import Colors
+from compiler.AST.AST import Program
+from compiler.DhaliaASTParser.parser import Parser
 import sys
 
 class CodeProcessor:

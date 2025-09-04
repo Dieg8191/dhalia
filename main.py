@@ -1,5 +1,5 @@
 import sys
-from DhaliaASTParser.codeProcessor import CodeProcessor
+from compiler.DhaliaASTParser.codeProcessor import CodeProcessor
 from compiler.compiler import Compiler
 
 

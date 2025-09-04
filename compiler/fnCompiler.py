@@ -1,4 +1,4 @@
-from AST.AST import Function
+from compiler.AST import Function
 
 
 class FnCompiler:
